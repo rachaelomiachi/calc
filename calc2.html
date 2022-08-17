@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calc2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scientific calculator</title>
+</head>
+<body>
+    
+<!-- <button onclick="document.cacl.text.value+='+'">+</button>
+<button onclick="document.cacl.text.value+='-'">-</button>
+<button onclick="document.cacl.text.value+='/'">/</button>
+<button onclick="document.cacl.text.value+='%'">%</button>
+<div class="container">
+        <form>
+            <input type="text" name="text" id="screen">
+        </form>
+        <div class="btns">
+            <button onclick="document.cacl.text.value=math.sin(document.cacl.text.value)">sin</button>
+            <button onclick="document.cacl.text.value=math.cos(document.cacl.text.value)">cos</button>
+            <button onclick="document.cacl.text.value=math.tan(document.cacl.text.value)">Tan</button>
+            <button onclick="document.cacl.text.value=math.log(document.cacl.text.value)">log</button>
+
+            <button onclick="document.cacl.text.value=math.pow(document.cacl.text.value,2)"
+            >x<sup>2</sup></button>
+            <button onclick="document.cacl.text.value=math.pow(document.cacl.text.value,2)"
+            >x<sup>3</sup></button>
+            <button onclick="document.cacl.text.value=math.pow(document.cacl.text.value,1/2)"
+            >&radic;</button>
+            <button onclick="document.cacl.text.value=math.pow(document.cacl.text.value,3)"
+            >&#8731;</button>
+
+<button onclick="document.cacl.text.value+='1'">1</button>
+<button onclick="document.cacl.text.value+='2'">2</button>
+<button onclick="document.cacl.text.value+='3'">3</button>
+<button onclick="document.cacl.text.value+='4'">4</button>
+
+<button onclick="document.cacl.text.value+='5'">5</button>
+<button onclick="document.cacl.text.value+='6'">6</button>
+<button onclick="document.cacl.text.value+='7'">7</button>
+<button onclick="document.cacl.text.value+='8'">8</button>
+
+<button onclick="document.cacl.text.value+='9'">9</button>
+<button onclick="document.cacl.text.value+='0'">0</button>
+<button onclick="document.cacl.text.value+='.'">.</button>
+<button onclick="document.cacl.text.value+='*'">*</button>
+    
+<button onclick="document.cacl.text.value+=eval(document.cacl.text.value)">=</button>
+<button onclick="document.cacl.text.value+=''">c</button>
+<button onclick="del()">Del</button>
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        function del(){
+            var x= document.getElementById('screen').value;
+            document.getElementById('screen').value=x.substr(0,x.lenght-1);
+
+        }
+    </script> -->
+    <!-- <input type="button" name="zero" style="font-size: 30px;" value="0" onclick="calculator.input.value +=
+    '0'"> -->
+    <div class="container">
+        <table class="calculator">
+        <tr>
+        
+            <td colspan="3"> <input class="display-box" type="text"
+                placeholder="0" id="result" ar>
+            
+            
+        </tr>
+        <tr>
+            <!--display() function displays the value of clicked button-->
+            <!--clearscreen() function clears all the values-->
+            <td> <button onclick="clear('c')">C</button></td>
+            <td> <button onclick="del('del')">Del</button></td>
+            <td> <button onclick="display('(')">(</button></td>
+            <td> <button onclick="display(')')">)</button></td>
+            <td> <button onclick="display('=')">=</button></td>
+            <td> <button onclick="display('%')">%</button></td>
+            
+            <td> <button onclick="display('x')">x <sup>!</sup></button></td>
+            <td> <button onclick="display('x')">x<sup>^</sup></button></td>
+            
+        </tr>
+        <tr>
+            <td> <button onclick="display('7')">7</button></td>
+            <td> <button onclick="display('8')">8</button></td>
+            <td> <button onclick="display('9')">9</button></td>
+            <td> <button onclick="display('*')">*</button></td>
+            <td> <button onclick="display('/')">/</button></td>
+            <td> <button onclick="display('|n')">|n</button></td>
+            <td> <button onclick="display('e')">e</button></td>
+            
+        </tr>
+        <tr>
+            <td> <button onclick="display('4')">4</button></td>
+            <td> <button onclick="display('5')">5</button></td>
+            <td> <button onclick="display('6')">6</button></td>
+            <td> <button onclick="display('x')">x</button></td>
+            <td> <button onclick="display('cos')">cos</button></td>
+            <td> <button onclick="display('x')">x<sup>2</sup></button></td>
+            <td> <button onclick="display('log')">log</button></td>
+            </tr>
+            <tr>
+                
+                <td> <button onclick="display('1')">1</button></td>
+                <td> <button onclick="display('2')">2</button></td>
+                <td> <button onclick="display('3')">3</button></td>
+                <td> <button onclick="display('-')">-</button></td>
+            <td> <button onclick="display('')">&#8731</button></td>
+            <td> <button onclick="display('sin')">sin</button></td>
+            <td> <button onclick="display('tan')">tan</button></td>
+        </tr>
+        <td>
+            <td> <button onclick="display('+')">+<sub>_</sub</button></td>
+            <td> <button onclick="display('0')">0</button></td>
+            <td> <button onclick="display('.')">.</button></td>
+            <td> <button onclick="calculate('=')">=</button></td>
+            <td> <button onclick="display('PI')">PI</button></td>  
+            <td> <button onclick="display('o')">o</button></td>
+            <td> <button onclick="display('rad')">rad</button></td>
+        </td>
+   
+</table> 
+    </div>
+    <script>
+        let outputScreen = document.getElementById("result");
+        function display(num){
+            outputScreen.value += num;
+        }
+        function calculate(num){
+           try{
+            outputScreen.value = eval(outputScreen.value);
+
+            }
+            catch(err)
+            {
+                alert("invalid")
+            }
+            function clear(){
+                outputScreen.value = "";
+            }
+            function del(num){
+                outputScreen.value = outputScreen.value.slice(2,-1);
+            }
+        }
+        
+    </script>
+
+
+   <script src="calc2.js"></script> 
+</body>
+</html>

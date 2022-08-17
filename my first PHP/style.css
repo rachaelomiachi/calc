@@ -1,0 +1,80 @@
+/* *{
+      
+    padding: 4px;
+    margin: 8px;
+    /* justify-items: center; */
+    /* text-align: center;
+    
+
+}
+.ten{
+     
+     border-radius: 10px; 
+    width: 390px;
+    margin: 3px;
+    background-color: aliceblue;
+    margin: auto;
+}
+#firstname{
+    
+    width: 300px; */
+    /* border: solid; */
+    /* border-radius: 12px;
+}
+#middlename{
+    width: 300px; */
+    /* border: solid; */
+    /* border-radius: 12px;
+}
+#phonenumber{
+    width: 300px;
+    border-end-end-radius: solid;
+    border-radius:12px ;
+    background-color: whitesmoke;
+
+}
+#address{
+    width: 300px;
+
+    border-radius:12px ;
+}
+#button1{ */
+   /* width: 100px;
+   border-radius: 8px; */
+   /* width: 300px;
+    border-end-end-radius: solid; 
+   border-radius:12px ;
+   background-color: aliceblue;
+}
+
+
+#button{ */
+   /* width: 100px;
+   border-radius: 8px; */
+   /* width: 100px;
+   border-end-end-radius: solid;
+   border-radius:12px ;
+   background-color: aliceblue;
+} */ 
+.form{
+    padding: 300px; 
+    margin: auto;
+    border: solid;
+    border-radius: 60px;
+    
+    
+}
+#mail{
+    padding: 13px;
+    margin: 5px;
+    width: 300px;
+    border-radius: 9px;
+    background-color: aliceblue;
+    
+}
+#btn{
+    padding: 5px;
+    width: 170px;
+    border-radius: 5px;
+    background-color: blue;
+}
